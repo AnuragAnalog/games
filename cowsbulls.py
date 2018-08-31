@@ -4,7 +4,7 @@ import random
 
 num = random.randint(1,99999)
 num = str(num)
-print("Number of digits in the number is", len(num), num) 
+print("Number of digits in the number is", len(num)) 
 
 def cows(num, guess):
     cow = 0
