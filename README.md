@@ -1,4 +1,4 @@
-*** TERMINAL GAMES ***
+# TERMINAL GAMES
 
 This repo contains some of the programs for playing well-known games using terminal.
 
