@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include "rps.h"
 
@@ -66,10 +67,10 @@ int ur_choice(int score_lap, int score_ur)
    char        choice[MAX];
 
    printf("Select your choice:- \n");
-   printf("0:ROCK     1:PAPER     2:SCISSORS\t\n");
+   printf("1:ROCK     2:PAPER     3:SCISSORS\t\n");
    scanf("%s", choice);
 
-   if (*choice >= '0' && *choice <= '2')
+   if (*choice >= '1' && *choice <= '3' && strlen(choice) == 1)
    {
       return (int)(*choice - '0');
    }
@@ -139,10 +140,10 @@ void game(int choice_lap, int choice_ur, int randnum)
    int        score, score_lap = 0, score_ur = 0;
 
    printf("When you are done with playing the game then type any character ");
-   printf("otherthan 0, 1, 2 to terminate the game.\n");
+   printf("otherthan 1, 2, 3 to terminate the game.\n");
    while(1)
    {
-      choice_ur = ur_choice(score_lap, score_ur);
+      choice_ur = ur_choice(score_lap, score_ur) - 1;
       choice_lap = lap_choice(randnum);
       score = cal_score(choice_lap, choice_ur);
 
@@ -158,11 +159,11 @@ void game(int choice_lap, int choice_ur, int randnum)
                score_lap = score_lap + 1;
                break;
       }
-      printf(" ---------------------\n");
-      printf("|Your score | My score|\n");
-      printf(" ---------------------\n");
-      printf("|     %d        %d      |\n", score_ur, score_lap);
-      printf(" ---------------------\n\n");
+      printf("+-------------------------------+\n");
+      printf("| Your score\t| My score\t|\n");
+      printf("+-------------------------------+\n");
+      printf("|\t%d\t|\t%d\t|\n", score_ur, score_lap);
+      printf("+-------------------------------+\n");
    }
 
    return ;
