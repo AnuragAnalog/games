@@ -76,6 +76,7 @@ int ur_choice(int score_lap, int score_ur)
    }
    else
    {
+      printf("\033[1;34m");
       printf("Thank you for playing the game.\n");
       if (score_ur > score_lap)
       {
@@ -89,6 +90,7 @@ int ur_choice(int score_lap, int score_ur)
       {
          printf("My luck is greater than your luck.\n");
       }
+      printf("\033[0m");
 
       exit(1);
    }
@@ -137,10 +139,12 @@ int cal_score(int choice_lap, int choice_ur)
 
 void game(int choice_lap, int choice_ur, int randnum)
 {
-   int        score, score_lap = 0, score_ur = 0;
+   int        status = -1, score, score_lap = 0, score_ur = 0;
 
+   printf("\033[1;34m");
    printf("When you are done with playing the game then type any character ");
    printf("otherthan 1, 2, 3 to terminate the game.\n");
+   printf("\033[0m");
    while(1)
    {
       choice_ur = ur_choice(score_lap, score_ur) - 1;
@@ -151,19 +155,35 @@ void game(int choice_lap, int choice_ur, int randnum)
       {
          case 0:
                printf("Both the choices are same.\n");
+               status = 0;
                break;
          case 2:
                score_ur = score_ur + 1;
+               status = 1;
                break;
          case 4:
                score_lap = score_lap + 1;
+               status = -1;
                break;
       }
-      printf("+-------------------------------+\n");
-      printf("| Your score\t| My score\t|\n");
-      printf("+-------------------------------+\n");
-      printf("|\t%d\t|\t%d\t|\n", score_ur, score_lap);
-      printf("+-------------------------------+\n");
+      if (status == -1)
+      {
+         printf("\033[1;31m");
+      }
+      else if (status == 0)
+      {
+         printf("\033[1;33m");
+      }
+      else if (status == 1)
+      {
+         printf("\033[1;32m");
+      }
+      printf("\t+-------------------------------+\n");
+      printf("\t| Your score\t| My score\t|\n");
+      printf("\t+-------------------------------+\n");
+      printf("\t|\t%d\t|\t%d\t|\n", score_ur, score_lap);
+      printf("\t+-------------------------------+\n");
+      printf("\033[0m");
    }
 
    return ;
