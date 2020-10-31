@@ -57,7 +57,7 @@ def printRules():
     print(f'Press {ROCK} to pick Rock')
     print(f'Press {PAPER} to pick Paper')
     print(f'Press {SCISSORS} to pick Scissors')
-    print("Enter any character or hit ctrl + c to end the game")
+    print("Enter any character or hit CTRL + C to end the game")
 
 
 def getComputersPick():
@@ -83,6 +83,7 @@ def getUsersPick():
             endGame()
 
         if choice not in choices:
+            print("Invalid Choice")
             print("You must pick one from ", choices)
             continue
         return choice
