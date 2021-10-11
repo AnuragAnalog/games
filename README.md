@@ -21,3 +21,4 @@ Open this directory, use command `python dice.py` to run the game.<br>
 - [**ROSHAMBO**](https://github.com/AnuragAnalog/games/blob/master/roshambo.py)<br>
 - [**SUDOKU SOLVER**](https://github.com/AnuragAnalog/games/blob/master/sudokuSolver.py)<br>
 - [**PONG**](https://github.com/AnuragAnalog/games/blob/master/pong.py)<br>
+- [**Connect 4**](https://github.com/AnuragAnalog/games/blob/master/connect4.py)<br>
