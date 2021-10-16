@@ -7,6 +7,10 @@ This repo contains some of the programs for playing well-known games using termi
 This directory contains files to play rps game. Run the Makefile to get the executable.<br>
 If you are a linux user run make in your terminal, else you need to install the make.
 
+- [Snake Game](https://github.com/AnuragAnalog/games/blob/master/snake_game.c)
+- [Sudoku Solver](https://github.com/AnuragAnalog/games/blob/master/sudoku_solver.c)
+- [Tic Tac Toe](https://github.com/AnuragAnalog/games/blob/master/tic_tac_toe.c)
+
 ## Python Games
 Download `filename.py` and run it using the command `python filename.py`.<br>
 - [**DICE ROLLER (WITH TKINTER GUI)**](https://github.com/AnuragAnalog/games/tree/master/dice-roller-tkinter-gui-game)<br>
