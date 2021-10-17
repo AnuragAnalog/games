@@ -26,3 +26,4 @@ Open this directory, use command `python dice.py` to run the game.<br>
 - [**SUDOKU SOLVER**](https://github.com/AnuragAnalog/games/blob/master/sudokuSolver.py)<br>
 - [**PONG**](https://github.com/AnuragAnalog/games/blob/master/pong.py)<br>
 - [**Connect 4**](https://github.com/AnuragAnalog/games/blob/master/connect4.py)<br>
+- [**Tetris**](https://github.com/AnuragAnalog/games/blob/master/Tetris.py)<br>
