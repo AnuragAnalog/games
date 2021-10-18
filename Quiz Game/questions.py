@@ -22,5 +22,41 @@ quiz = {
     6 : {
         "question" : "Which Avenger is red in color and has mind stone?",
         "answer" : "Vision"
-    }
+    },
+    7: {
+        "question" : "Where did Killmonger grow up?",
+        "answer" : "Oakland, California"
+    },
+    8: {
+        "question" : "___ Parker is Peter Parker’s aunt’s name?",
+        "answer" : "May"
+    },
+    9: {
+        "question" : "Which Infinity Stone does Vision have in his head?",
+        "answer" : "Mind Stone"
+    },
+    10: {
+        "question" : "What is Tony Stark’s daughter’s name?",
+        "answer" : "Morgan"
+    },
+    11: {
+        "question" : "What planet is Thanos from?",
+        "answer" : "Titan"
+    },
+    12: {
+        "question" : "What AI replaces JARVIS?",
+        "answer" : "FRIDAY"
+    },
+    13: {
+        "question" : "What chemical do the Avengers use to travel in time in Avengers: Endgame?",
+        "answer" : "Pym particles"
+    },
+    14: {
+        "question" : "What kind of doctor was Dr. Stephen Strange?",
+        "answer" : "Neurosurgeon"
+    },
+    15: {
+        "question" : " Which eye does Thor lose?",
+        "answer" : "Right"
+    },
 }
