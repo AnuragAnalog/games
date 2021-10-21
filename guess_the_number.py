@@ -4,7 +4,7 @@ import random
 
 def guess_the_number():
     print("I have a number, guess that\n")
-    num = random.randint(1000)
+    num = random.randint(0, 1000)
     numberOfTrys=0
     while True:
         guess = int(input("Guess the number: "))
