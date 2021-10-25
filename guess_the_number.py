@@ -2,20 +2,29 @@
 
 import random
 
-def guess_the_number():
-    print("I have a number, guess that\n")
-    num = random.randint(0, 1000)
-    numberOfTrys=0
-    while True:
-        guess = int(input("Guess the number: "))
-        numberOfTrys += 1
-        if guess > num:
-            print("My number is smaller than yours\nTry Again")
-        elif guess < num:
-            print("My number is larger than yours\nTry Again")
-        else:
-            print(f"Hooray! You have guessed it right in {numberOfTrys} attempt(s).")
-            return
+print("I have a number 1-1000, guess it!\n")
+num = random.randint(1, 1000)
+print(num)
+numberOfTrys=0
+higher=1000
+lower=1
+guess = 0
     
-if __name__ == "__main__":
-    guess_the_number()
+while guess != num:
+    guess = int(input(f"Guess the number between {lower} and {higher}: "))
+    numberOfTrys += 1
+        
+    if guess < lower or guess > higher:
+        print("Your guess is not in range\n Try Again")
+            
+    elif guess > num:
+        print("My number is smaller than yours\nTry Again")
+        higher = guess
+            
+    elif guess < num:
+        print("My number is larger than yours\nTry Again")
+        lower = guess
+            
+    elif guess == num:
+        print(f"Hooray! You have guessed {num} right in {numberOfTrys} attempt(s).")
+            
