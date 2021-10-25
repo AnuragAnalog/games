@@ -4,7 +4,6 @@ import random
 
 print("I have a number 1-1000, guess it!\n")
 num = random.randint(1, 1000)
-print(num)
 numberOfTrys=0
 higher=1000
 lower=1
