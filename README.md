@@ -27,3 +27,4 @@ Open this directory, use command `python dice.py` to run the game.<br>
 - [**PONG**](https://github.com/AnuragAnalog/games/blob/master/pong.py)<br>
 - [**Connect 4**](https://github.com/AnuragAnalog/games/blob/master/connect4.py)<br>
 - [**Tetris**](https://github.com/AnuragAnalog/games/blob/master/Tetris.py)<br>
+- [**Bricks Breaker**](https://github.com/AnuragAnalog/games/blob/master/bricks_breaker.py)<br>
